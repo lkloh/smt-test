@@ -1,7 +1,7 @@
 smt-test
 ========
 
-To run a C++ file names FILE.c::
+To run a C++ file named ``FILE.c``
   
-  g++ FILE.c -o FILE
-  ./demo.c
+    g++ FILE.c -o FILE
+    ./demo.c
