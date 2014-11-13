@@ -4,7 +4,7 @@ smt-test
 Resources
 ---------
 
-`CVC4 <http://cvc4.cs.nyu.edu/wiki/Tutorials>`
+[CVC4](http://cvc4.cs.nyu.edu/wiki/Tutorials)
 
 Running the code
 ----------------
