@@ -1,6 +1,11 @@
 smt-test
 ========
 
+Installation
+------------
+OS: Ubuntu 12.04
+
+
 Resources
 ---------
 
