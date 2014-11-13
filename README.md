@@ -1,6 +1,14 @@
 smt-test
 ========
 
+Resources
+---------
+
+`CVC4 <http://cvc4.cs.nyu.edu/wiki/Tutorials>`
+
+Running the code
+----------------
+
 To run a C++ file named ``FILE.c``
   
     g++ FILE.c -o FILE
