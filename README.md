@@ -3,15 +3,10 @@ smt-test
 
 Installation - Ubuntu
 ---------------------
-
-Installation - MacOS
---------------------
-* 
 * Download the [source code](http://cvc4.cs.nyu.edu/builds/src/)
 * Unzip the file and cd into it
+* Download and install [gmplib](https://gmplib.org/)
 * Run ``./configure``
-* 
-
 
 Resources
 ---------
