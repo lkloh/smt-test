@@ -7,6 +7,7 @@ Installation - Ubuntu
 * Unzip the file and cd into it
 * Download and install [gmplib](https://gmplib.org/)
 * Run ``./configure``
+* Run ``make examples`` to run the examples
 
 Resources
 ---------
