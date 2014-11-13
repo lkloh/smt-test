@@ -1,9 +1,16 @@
 smt-test
 ========
 
-Installation
-------------
-OS: Ubuntu 12.04
+Installation - Ubuntu
+---------------------
+
+Installation - MacOS
+--------------------
+* 
+* Download the [source code](http://cvc4.cs.nyu.edu/builds/src/)
+* Unzip the file and cd into it
+* Run ``./configure``
+* 
 
 
 Resources
