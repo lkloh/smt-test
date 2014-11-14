@@ -33,7 +33,7 @@ Running code that sources Rapidnet
 * Reference: [Wenchao Zhou](http://people.cs.georgetown.edu/~wzhou/)
 * Need to tell ``g++`` where to find the header files and the library (at linking stage). For example, to run the following ``c++`` file (``test.cc``) that references the header ``attribute.h``, found in the RapidNet folder:
 
-    #include <attribute.h>
+    \#include <attribute.h>
 
     int main() {
       Ptr<AttributeValue> value;
