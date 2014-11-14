@@ -27,3 +27,34 @@ To run a C++ file that makes use of the CVC4 libraries, such as ``helloworld.cpp
 
     g++ helloworld.cpp -o helloworld -lcvc4
     ./helloworld
+
+Running code that sources Rapidnet
+----------------------------------
+* Reference: [Wenchao Zhou](http://people.cs.georgetown.edu/~wzhou/)
+* You need to tell ``g++`` where to find the header files and the library (at linking stage). For example, to run the following ``c++`` file (``test.cc``) that references the header ``attribute.h``, found in the RapidNet folder:
+
+    #include<attribute.h>
+
+    int main() {
+      Ptr<AttributeValue> value;
+      return 0;
+    }
+
+If you just type 
+
+    g++ test.cc -otest
+    
+The compiler gives an error stating that it cannot find the header file.
+
+Now we can let the ``g++`` compiler know where to find the header file:
+
+    g++ -I/<root-directory-for-ns3>/build/debug/ns3 -lns3 -L/<root-directory-for-ns3>/build/debug test.cc -o test
+
+Switches done:
+1. ``-I``: Where to find the header files (There are a lot of ``.h`` files within that directory).  
+2. ``-l``: Reference the ``libns3.so`` library 
+3. ``-L``: Where to find the library file.
+
+
+
+
