@@ -51,6 +51,7 @@ Now we can let the ``g++`` compiler know where to find the header file:
     g++ -I/<root-directory-for-ns3>/build/debug/ns3 -lns3 -L/<root-directory-for-ns3>/build/debug test.cc -o test
 
 Switches done:
+
 1. ``-I``: Where to find the header files (There are a lot of ``.h`` files within that directory).  
 2. ``-l``: Reference the ``libns3.so`` library 
 3. ``-L``: Where to find the library file.
