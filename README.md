@@ -31,16 +31,16 @@ To run a C++ file that makes use of the CVC4 libraries, such as ``helloworld.cpp
 Running code that sources Rapidnet
 ----------------------------------
 * Reference: [Wenchao Zhou](http://people.cs.georgetown.edu/~wzhou/)
-* You need to tell ``g++`` where to find the header files and the library (at linking stage). For example, to run the following ``c++`` file (``test.cc``) that references the header ``attribute.h``, found in the RapidNet folder:
+* Need to tell ``g++`` where to find the header files and the library (at linking stage). For example, to run the following ``c++`` file (``test.cc``) that references the header ``attribute.h``, found in the RapidNet folder:
 
-    #include<attribute.h>
+    #include <attribute.h>
 
     int main() {
       Ptr<AttributeValue> value;
       return 0;
     }
 
-If you just type 
+If you type 
 
     g++ test.cc -otest
     
@@ -54,7 +54,7 @@ Switches done:
 
 1. ``-I``: Where to find the header files (There are a lot of ``.h`` files within that directory).  
 2. ``-l``: Reference the ``libns3.so`` library 
-3. ``-L``: Where to find the library file.
+3. ``-L``: Where to find the library file for the implementation
 
 
 
