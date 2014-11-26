@@ -7,41 +7,38 @@
 
 using namespace std;
 
-/*
- * Term
- */
-class Term
+class Shape
 {
+protected:
+	float width, height;
 public:
-	Term(){}
-
-	virtual ~Term(){}
-
-	virtual string getClass() {
-		return "Term";
+	void set_data (float a, float b)
+	{
+		width = a;
+		height = b;
 	}
 };
 
-class Variable: public Term
+class Rectangle: public Shape
 {
 public:
-	Variable(){}
-
-	virtual ~Variable(){}
-
-	virtual string getClass() {
-		return "Variable";
+	float area ()
+	{
+		return (width * height);
 	}
 };
 
-class IntVal: public Variable
+class Triangle: public Shape
 {
 public:
-	IntVal(){}
-
-	virtual ~IntVal(){}
-
-	virtual string getClass() {
-		return "Integer";
+	float area ()
+	{
+		return (width * height / 2);
 	}
 };
+
+
+
+
+
+

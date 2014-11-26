@@ -20,7 +20,14 @@
 
 using namespace std;
 
-int main() {
-  cout << "you suck" << endl;
-  return 0;
+int main ()
+{
+	Rectangle rect;
+	Triangle tri;
+	rect.set_data(5,3);
+	tri.set_data(2,5);
+	std::cout << rect.area() << std::endl;
+	std::cout << tri.area() << std::endl;
+	std::cout << "YOU ARE STUPID"<< std::endl;
+	return 0;
 }
