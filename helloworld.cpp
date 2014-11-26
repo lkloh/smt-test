@@ -28,6 +28,8 @@ int main ()
 	tri.set_data(2,5);
 	std::cout << rect.area() << std::endl;
 	std::cout << tri.area() << std::endl;
+	Shape shape = tri;
+	std::cout << shape.area() << std::endl;
 	std::cout << "YOU ARE STUPID"<< std::endl;
 	return 0;
 }

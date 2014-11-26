@@ -17,12 +17,16 @@ public:
 		width = a;
 		height = b;
 	}
+
+	virtual float area() {
+		return 0;
+	}
 };
 
 class Polygon: public Shape
 {
 public:
-	float area ()
+	virtual float area ()
 	{
 		return (width * height);
 	}
@@ -31,7 +35,7 @@ public:
 class Triangle: public Polygon
 {
 public:
-	float area ()
+	virtual float area ()
 	{
 		return (width * height / 2);
 	}
