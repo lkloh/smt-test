@@ -22,14 +22,13 @@ using namespace std;
 
 int main ()
 {
-	Polygon rect;
-	Triangle tri;
-	rect.set_data(5,3);
-	tri.set_data(2,5);
-	std::cout << rect.area() << std::endl;
-	std::cout << tri.area() << std::endl;
-	Shape shape = tri;
-	std::cout << shape.area() << std::endl;
-	std::cout << "YOU ARE STUPID"<< std::endl;
+	//method 1
+	Polygon p = Polygon();
+	Shape* testing = &p;
+	std::cout << testing->getType() << std::endl;
+
+	//method 2
+	std::unique_ptr<Shape> poly(new Polygon());
+	std::cout << poly->getType() << std::endl;
 	return 0;
 }
