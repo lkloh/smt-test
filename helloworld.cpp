@@ -22,7 +22,7 @@ using namespace std;
 
 int main ()
 {
-	Rectangle rect;
+	Polygon rect;
 	Triangle tri;
 	rect.set_data(5,3);
 	tri.set_data(2,5);

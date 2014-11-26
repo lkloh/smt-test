@@ -19,7 +19,7 @@ public:
 	}
 };
 
-class Rectangle: public Shape
+class Polygon: public Shape
 {
 public:
 	float area ()
@@ -28,7 +28,7 @@ public:
 	}
 };
 
-class Triangle: public Shape
+class Triangle: public Polygon
 {
 public:
 	float area ()
